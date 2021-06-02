@@ -1,0 +1,11 @@
+name: LivestreamCamera
+version: ${project.version}
+main: net.noknt.livestreamcamera.LivestreamCamera
+authors: [ SIVIN ]
+description: Used for controlling a livestreams camera player
+website: noknt.net
+commands:
+  cam:
+    description: Used for all things related to LivestreamCamera
+    usage: /cam
+    permission: livestreamcamera.cam
