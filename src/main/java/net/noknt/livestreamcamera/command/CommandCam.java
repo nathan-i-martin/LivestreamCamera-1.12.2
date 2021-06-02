@@ -25,9 +25,11 @@ public class CommandCam implements CommandExecutor {
             switch(args[0]) {
                 case "on":
                     LivestreamCamera.getInstance().getCamPlayers().put(((Player) sender).getUniqueId(),0);
+                    sender.sendMessage(chatPrefix + ChatColor.GRAY + "Cam Mode: " + ChatColor.GREEN + "ON");
                     break;
                 case "off":
                     LivestreamCamera.getInstance().getCamPlayers().remove(((Player) sender).getUniqueId());
+                    sender.sendMessage(chatPrefix + ChatColor.GRAY + "Cam Mode: " + ChatColor.RED + "OFF");
                     break;
                 case "zoom":
                     if(args.length == 1) {
